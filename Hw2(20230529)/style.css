@@ -1,23 +1,23 @@
 body{
     font-family: 'Notosans2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-.banner-platform{
+.platform{
     padding-top: 64px;
     padding-bottom: 64px;
     background-color: #F7F8F9;
     text-align: center;
 }
-.banner-platform h2{
+.platform h2{
     display: block;
     font-size: 32px;
     color: #052855;
 }
-.banner-platform p{
+.platform p{
     display: block;
     font-size: 16px;    
     color: #052855;
 }
-.banner{
+article{
     width: 1000px;
     margin: auto;
 }
@@ -28,40 +28,31 @@ body{
     justify-content: space-between;
 
 }
- a{
+a{
     text-decoration: none;
     box-shadow: 0 1px;padding-bottom :5px;  
     
 }
 
-
-.banner .item:nth-child(even){
+article .item:nth-child(even){
     flex-direction: row-reverse;
 }
 .item ul{ 
     flex-wrap: wrap;
-    flex-direction: row;  
-   
+    flex-direction: row;     
+}
+.function{
+    padding: 64px 40px;  
+  
+    background-color: #f5f6f7;
+    display: flex;
+}
+.function .card-top{
+
 }
 .function h2{
    padding-top: 75px;
     text-align: center;
-}
-.function{
-    padding: 40px;    
-    background-color: #f5f6f7;
-
-}
-.function h2{
     font-weight: bold;
-    margin-bottom: 14px;
 }
 
-.card-top{
-    justify-content: center;
-    display: flex;
-}
-.card-bottom{
-    justify-content: center;
-    display: flex;
-}
