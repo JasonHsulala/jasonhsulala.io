@@ -2181,8 +2181,8 @@
                 alert("從DOM建立英雄人物陣列資料成功！");
                 
                 //1.從DOM建立英雄人物資料
-                let hreoDomList = Array.from(container.children)
-                hreoDomList.forEach((node, index)=>{
+                let heroDomList = Array.from(container.children)
+                heroDomList.forEach((node, index)=>{
                     let heroObj = {
                         id: ++index,
                         name: node.querySelector('.card').getAttribute('id'),
