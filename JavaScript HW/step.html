@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <div class="container">
+  
+    </div>
+    <script>          
+      const container = document.querySelector('.container')
+      window.onload = function(){
+        table = document.createElement('table')
+        thead = document.createElement('thead')
+        tbody = document.createElement('tbody')
+        createThead()
+        createTbody()
+        container.append(table)
+        
+      }
+
+    function createThead(){
+        let theadTr = document.createElement('tr')
+        let title = marketingShare.titles
+        console.log(title)
+        title.forEach((item) =>{
+
+            //建立th，把item塞到th裡面
+            let theadth = document.createElement('th')
+            theadth.append(item)
+            //把th塞到tr裡面
+            theadTr.append(theadth)
+            thead.append(theadTr)
+            table.append(thead)
+          
+        })
+        // console.log(theadTr)
+    }
+    function createTbody(){
+        // let tbodyTr = document.createElement('tr')
+        let data = marketingShare.data
+        console.log(data)
+        data.forEach((item)=>{
+            //建立td，把Ranking放到td裡面
+            let tbodyTr = document.createElement('tr')
+            let tbodytd1 = document.createElement('td')
+            tbodytd1.append(item.Ranking)
+            //建立td，把Name放到td裡面
+            let tbodytd2 = document.createElement('td')
+            tbodytd2.append(item.Name)
+            //建立td，把Country放到td裡面
+            let tbodytd3 = document.createElement('td')
+            tbodytd3.append(item.Country)
+            //建立td，把Ratio放到td裡面
+            let tbodytd4 = document.createElement('td')
+            tbodytd4.append(item.Ratio)      
+ 
+            //把td放到tr裡面
+            tbodyTr.append(tbodytd1,tbodytd2,tbodytd3,tbodytd4)
+            tbody.append(tbodyTr)
+            table.append(tbody)
+
+        })
+    }
+    </script>
+  </body>
+</html>
