@@ -24,6 +24,11 @@ image{
     font-size: 52px;
 
 }
+.item .title h2 span{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: nowrap;
+}
 .item .title .title-information{
     background-color: #000;   
     padding: 10px;
